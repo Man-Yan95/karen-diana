@@ -13,6 +13,13 @@
   font-family: 'Regular';
   src: url(../font/Amrys-Regular.ttf);
 }
+
+
+  #music-trigger {
+    background: url('./assets/audio/cover.jpg') center/cover no-repeat;
+    cursor: pointer;
+  }
+
 :root{
   --blue-light: #c6c06e;
   --blue-mid:   #e3edaa;

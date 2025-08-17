@@ -238,3 +238,9 @@ wrapper.addEventListener('mouseleave', () => {
 
 
 
+
+const player = document.getElementById('player');
+const trigger = document.getElementById('music-trigger');
+trigger.addEventListener('mouseenter', () => player.play());
+trigger.addEventListener('touchstart', () => player.play());
+

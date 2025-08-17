@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>karen-diana</title>
+  <title>Hover Music Example</title>
+<title>cover</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+ 
+<div id="music-trigger"></div>
+
+<audio id="player">
+  <source src="./assets/audio/WhatsAppAudio2025-08-18at0202444c4aab1.mp3" type="audio/mpeg">
+  Ձեր browser-ը չի աջակցում audio tag-ը։
+</audio>
+
+  <div class="harsaniq">
+    <div class="karen-img">
+      <div class="karen-text">
+    <h1>ԿԱՐԵՆ </h1>
+    <H1>&</H1>
+    <H1>ԱՇԽԵՆ</H1>
+  </div>
+</div>
+<div class="ashxen"><h3>Մեր պսակադրության օրվան սպասել ենք շատ երկար և ցանկանում ենք մեր կյանքի ամենակարևոր օրվա պայծառ ու լուսավոր ակնթարթները կիսել հենց Ձեզ հետ։</h3></div>
+    <div class="calendar-wrap" role="application" aria-label="Օրացույց՝ Հոկտեմբեր 2025">
+      <div class="header">
+        <div class="title">
+          <h2> 2025</h2>
+          <p>10/10</p>
+        </div>
+
+      </div>
+
+      <div class="weekdays" aria-hidden="true">
+        <div class="weekday">Երկ</div>
+        <div class="weekday">Երք</div>
+        <div class="weekday">Չրք</div>
+        <div class="weekday">Հնգ</div>
+        <div class="weekday">Ուրբ</div>
+        <div class="weekday">Շաբ</div>
+        <div class="weekday">Կիր</div>
+      </div>
+
+      <div class="grid" id="calendarGrid" aria-live="polite">
+        <!-- JS will inject the days here -->
+      </div>
+
+      <div class="info">
+        <div class="box" id="todayBox">Այսօր՝ <strong id="todayText">...</strong></div>
+        <div class="countdown" id="countdownBox"> Մինչև 10.10.2025 — <strong id="daysLeft">...</strong></div>
+      </div>
+    </div>
+<div class="image-wrapper">
+  <img src="./assets/img/ashxen4.jpg" alt="Background" class="img-bg">
+  <img src="./assets/img/ashxen2.jpg" alt="Foreground" class="img-fg">
+</div>
+
+<div class="programa">
+  <p>ԾՐԱԳԻՐ</p>
+  <p>
+    <span>12:00</span>
+    <span>Հարսի տուն</span>
+    <span>Գ․Փոքր Վեդի Պարույր Սեվակի 36տ․</span>
+    
+  </p>
+    <p>
+    <span>14:00</span>
+    <span>Եկեղեցի</span>
+    <span>Գ․Փոքր Վեդի Խոր Վիրապ</span>
+    
+  </p>
+    <p>
+    <span>17:30</span>
+    <span>Հարսանյաց սրահ</span>
+    <span>Ք․ Արտաշատ Ոսկե Ծիրան</span>
+    
+  </p>
+</div>
+<div class="heppy">
+  <h4>Ուրախ կլինեք եթե միանաք մեզ</h4>
+</div>
+
+   <div class="attending_area plus_padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-xl-7 col-lg-8">
+        <div class="popup_box">
+          <div class="popup_inner">
+
+            <!-- Վերնագիր -->
+            <div class="form_heading text-center">
+              <h3>Կմասնակցե՞ք մեր հարսանիքին,</h3>
+              <p>Խնդրում ե՛նք պատասխանել մինչև հոկտեմբերի 1-ը</p>
+            </div>
+
+            <!-- Կապի միջոցների ընտրություն (ՍԿԶԲՈՒՄ ՄԻԱՅՆ ԱՅՍՔԱՆՆ Է ԵՐԵՎՈՒՄ) -->
+            <div class="contact_choice text-center">
+              <button type="button" id="choosePhone" class="contact_btn" aria-label="Զանգով պատասխանել">
+                <!-- phone icon -->
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.08 4.2 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.32 1.78.6 2.63a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.45-1.12a2 2 0 0 1 2.11-.45c.85.28 1.73.48 2.63.6A2 2 0 0 1 22 16.92Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+
+              <button type="button" id="chooseEmail" class="contact_btn" aria-label="Email-ով պատասխանել">
+                <!-- mail icon -->
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="m22 6-10 7L2 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+
+            <!-- ԶԱՆԳ՝ ընտրություն + Զանգել -->
+            <div id="phoneSection" class="section hidden">
+              <label class="field_label">Ընտրեք հեռախոսահամար</label>
+              <select id="phoneSelect" class="field_input">
+                <option value="">— Ընտրեք —</option>
+                <option value="+3777289241">ԿԱՐԵՆ</option>
+                <option value="+37498127576">ԱՇԽԵՆ</option>
+              </select>
+              <a id="callBtn" href="#" class="boxed_btn3 hidden">Զանգել</a>
+            </div>
+
+            <!-- ՄԵՅԼ՝ լրիվ ձևը (ՍԿԶԲՈՒՄ ՓԱԿ Է) -->
+            <form id="rsvpForm" class="section hidden">
+              <div class="grid_two">
+                <input type="text" name="name" class="field_input" placeholder="Ձեր անունը" required>
+                <select name="guests" class="field_input" required>
+                  <option value="">Հյուրերի քանակ</option>
+                  <option value="1">1 հյուր</option>
+                  <option value="2">2 հյուր</option>
+                  <option value="3">3 հյուր</option>
+                  <option value="4">4 հյուր</option>
+                  <option value="5">5 հյուր</option>
+                </select>
+              </div>
+
+              <textarea name="message" class="field_input" placeholder="Լրացուցիչ հաղորդագրություն"></textarea>
+
+              <!-- Ում մելին ուղարկել -->
+              <label class="field_label">Ընտրեք՝ ում mail-ին  ուղարկվի պատասխանն</label>
+              <select name="recipient" class="field_input" required>
+                <option value="">— Ընտրեք —</option>
+                <option value="kar">ԿԱՐԵՆ</option>
+                <option value="gevorgyanashkhena-@aspu.am">ԱՇԽԵՆ</option>
+              </select>
+
+              <!-- Ձեր email դաշտը՝ որ հետադարձ կապը գա ձեզ -->
+              <!-- <input type="email" name="email" class="field_input" placeholder="Ձեր Email" required> -->
+
+              <button type="submit" class="boxed_btn3">Ուղարկել</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ծաղկային թեթև ֆոն (կարող ես փոխել պատկերների ուղիները) -->
+    <div class="flower_1 d-none d-lg-block"><img src="img/appointment/flower-top.png" alt=""></div>
+    <div class="flower_2 d-none d-lg-block"><img src="img/appointment/flower-bottom.png" alt=""></div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

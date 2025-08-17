@@ -239,9 +239,13 @@ wrapper.addEventListener('mouseleave', () => {
 
 
 
+ const player = document.getElementById('player');
+  let played = false; // Հատուկ՝ միանվագ սեղմման համար
 
-const player = document.getElementById('player');
-const trigger = document.getElementById('music-trigger');
-trigger.addEventListener('mouseenter', () => player.play());
-trigger.addEventListener('touchstart', () => player.play());
+  document.addEventListener('click', () => {
+    if (!played) {        // Եթե դեռ չի սկսվել
+      player.play();      // Երաժշտությունը սկսի
+      played = true;      // Հիմա հետագայում չի կրկնվի ավտոմատ
+    }
+  }, { once: true }); 
 

@@ -238,24 +238,10 @@ wrapper.addEventListener('mouseleave', () => {
 
 
 
-const audioUrl = "https://raw.githubusercontent.com/USERNAME/REPO_NAME/main/assets/audio/PerfectSongbyEdSheeran.mp3";
-
-const player = document.createElement("audio");
-player.src = audioUrl;
-player.controls = true;
-document.body.appendChild(player);
-
-// Օգտագործողի interaction–ի վրա նվագել
-player.addEventListener("canplaythrough", () => {
-  player.play().catch(() => {
-    // Autoplay restricted, սպասել user interaction
-  });
-});
-
-const trigger = document.getElementById("music-trigger");
-trigger.addEventListener("mouseenter", () => player.play());
-trigger.addEventListener("touchstart", () => player.play());
 
 
-
+const player = document.getElementById('player');
+const trigger = document.getElementById('music-trigger');
+trigger.addEventListener('mouseenter', () => player.play());
+trigger.addEventListener('touchstart', () => player.play());
 

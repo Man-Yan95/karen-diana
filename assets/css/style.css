@@ -16,7 +16,7 @@
 
 
   #music-trigger {
-    background: url('./assets/audio/cover.jpg') center/cover no-repeat;
+    background: url('./assets/audio/cover') center/cover no-repeat;
     cursor: pointer;
   }
 
